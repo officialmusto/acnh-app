@@ -6,18 +6,20 @@ import { getVillagers } from '../apiServices'
 import Villager from '../components/Villager'
 
 const VillagerList = (props) => {
-const [villagers, setVillagers] = useState({})
+const [villagers, setVillagers] = useState([])
 
 useEffect(() => {
   getVillagers()
-  .then(villagerData => console.log(villagerData, "does this work"))
+  .then(villagerData => setVillagers(villagerData))
 })
 
 
   return (
     <View styles={styles.list}>
-      <Villager />
-      <Text>weee</Text>
+      <Text>Villager List</Text>
+      {villagers.map(villager => 
+        <Villager key={villager.url} villager={villager}/>
+        )}
     </View>
   )
 }

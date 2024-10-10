@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const Villager = () => {
+const Villager = ( { villager } ) => {
   return (
     <View style={styles.card}>
-      <Text>Villager</Text>
+      <Text>Name: {villager.name}</Text>
+      <Text>Phrase: "{villager.phrase}"</Text>
+      <Text>Quote: "{villager.quote}"</Text>
     </View>
   );
 };

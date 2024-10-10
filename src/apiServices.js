@@ -1,6 +1,6 @@
 import { API_KEY } from '@env'
 
-const BASE_URL = 'https://api.nookipedia.com';
+const BASE_URL = 'https://api.nookipedia.com'
 
 
 export function getVillagers() {
@@ -11,6 +11,6 @@ export function getVillagers() {
   })
     .then(res => res.json())
     .catch(error => {
-      console.error("Failed to fetch villagers:", error);
-    });
+      console.error("Failed to fetch villagers:", error)
+    })
 }
