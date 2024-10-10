@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, Text, View, FlatList, Button } from 'react-native'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { getVillagers } from '../apiServices'
 
 import Villager from '../components/Villager'
 
-const VillagerList = (props) => {
+const VillagerList = () => {
 const [villagers, setVillagers] = useState([])
 
 useEffect(() => {
