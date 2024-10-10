@@ -1,10 +1,10 @@
 import { StyleSheet, SafeAreaView } from 'react-native';
-import Villager from './components/Villager'; // Ensure this path is correct
+import VillagerList from './screens/VillagerList';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Villager />
+      <VillagerList />
     </SafeAreaView>
   );
 }

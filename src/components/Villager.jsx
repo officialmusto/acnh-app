@@ -1,23 +1,33 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 
 const Villager = () => {
-  console.log("test");
   return (
-    <View style={styles.container}>
-      <Text >Villager</Text>
+    <View style={styles.card}>
+      <Text>Villager</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Villager
+export default Villager;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'rgb(135, 176, 240)', 
+  card: {
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    padding: 20,
+    marginVertical: 10,
+    width: '90%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 5,
     alignItems: 'center',
-    justifyContent: 'center',
+  },
+  villagerName: {
+    fontSize: 18,
     fontWeight: 'bold',
+    color: '#333',
   },
 });
