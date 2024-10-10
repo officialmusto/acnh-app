@@ -7,6 +7,7 @@ const Villager = ( { villager } ) => {
       <Text>Name: {villager.name}</Text>
       <Text>Phrase: "{villager.phrase}"</Text>
       <Text>Quote: "{villager.quote}"</Text>
+      <Text>Birthday: {villager.birthday_month}</Text>
     </View>
   );
 };
@@ -15,6 +16,8 @@ export default Villager;
 
 const styles = StyleSheet.create({
   card: {
+    display: "flex",
+    alignItems: 'center',
     backgroundColor: '#fff',
     borderRadius: 8,
     padding: 20,
@@ -25,7 +28,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 2,
     elevation: 5,
-    alignItems: 'center',
   },
   villagerName: {
     fontSize: 18,
