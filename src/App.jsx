@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native';
 // stylesheet:
 import styles from './App.styles'
 
-import VillagerList from './screens/VillagerList/VillagerList';
+import VillagerList from './screens/VillagerListScreen/VillagerListScreen';
 
 export default function App() {
   return (

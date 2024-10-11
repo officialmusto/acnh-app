@@ -1,6 +1,4 @@
-import { StyleSheet } from "react-native"
-
-const styles = StyleSheet.create({
+const styles = {
   card: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -9,6 +7,7 @@ const styles = StyleSheet.create({
     padding: 20,
     marginVertical: 10,
     width: '100%',
+    maxWidth: 600,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
@@ -21,17 +20,25 @@ const styles = StyleSheet.create({
     height: 80,
     marginRight: 20,
   },
+  textContainer: {
+    flex: 1,
+  },
   name: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 5,
   },
+  infoRow: {
+    flexDirection: 'row',
+    alignItems: 'center',  // Align icon and text vertically
+  },
   infoText: {
     fontSize: 14,
+    fontWeight: 'bold',
     color: '#555',
-    marginBottom: 3,
+    marginLeft: 5,  // Add some space between the icon and the text
   },
-});
+}
 
 export default styles

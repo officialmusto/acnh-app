@@ -13,8 +13,13 @@ export async function getVillagers() {
     // Wait for the response and parse it as JSON
     const data = await response.json()
 
-    // Return the data
-    return data
+    // Filter villagers that have both a birthday and a quote
+    const filteredVillagers = data.filter(villager => {
+      return villager.birthday_month && villager.birthday_day && villager.quote
+    })
+
+    // Return only villagers that meet the condition
+    return filteredVillagers
   } catch (error) {
     console.error("Failed to load villagers:", error)
     throw error
