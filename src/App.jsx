@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from 'react-native'
+import { SafeAreaView } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import MainTabNavigator from './navigation/MainTabNavigator'
 
@@ -8,10 +8,10 @@ import styles from './App.styles'
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <NavigationContainer>
         <MainTabNavigator />
-      </View>
-    </NavigationContainer>
+      </NavigationContainer>
+    </SafeAreaView>
   )
 }

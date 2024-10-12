@@ -23,7 +23,7 @@ const VillagerListScreen = () => {
   return (
     <View style={styles.container}>
       {loading ? (
-        <ActivityIndicator size="large" color="#0000ff" />
+        <ActivityIndicator size="large" color="#F3E0C0" />
       ) : (
         <FlatList
           data={villagers}

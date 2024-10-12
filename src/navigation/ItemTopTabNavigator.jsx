@@ -13,7 +13,7 @@ const ItemTopTabNavigator = () => {
       <TopTabs.Screen name="Fossils" component={FossilListScreen} />
       <TopTabs.Screen name="Posters" component={PosterListScreen} />
     </TopTabs.Navigator>
-  )
-}
+  );
+};
 
 export default ItemTopTabNavigator

@@ -11,7 +11,7 @@ const CritterpediaTopTabNavigator = () => {
       <TopTabs.Screen name="Bugs" component={BugListScreen} />
       <TopTabs.Screen name="Fish" component={FishListScreen} />
     </TopTabs.Navigator>
-  );
-};
+  )
+}
 
 export default CritterpediaTopTabNavigator
