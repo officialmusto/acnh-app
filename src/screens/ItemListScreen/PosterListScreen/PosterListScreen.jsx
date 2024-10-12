@@ -6,8 +6,8 @@ import styles from './PosterListScreen.styles'
 
 const PosterListScreen = () => {
   return (
-    <View>
-      <Text>PosterListScreen</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>PosterListScreen</Text>
     </View>
   )
 }

@@ -6,8 +6,8 @@ import styles from './HomeScreen.styles'
 
 const HomeScreen = () => {
   return (
-    <View style={styles.card}>
-      <Text>HomeScreen</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>HomeScreen</Text>
     </View>
   )
 }

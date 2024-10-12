@@ -6,8 +6,8 @@ import styles from './FishListScreen.styles'
 
 const FishListScreen = () => {
   return (
-    <View>
-      <Text>FishListScreen</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>FishListScreen</Text>
     </View>
   )
 }

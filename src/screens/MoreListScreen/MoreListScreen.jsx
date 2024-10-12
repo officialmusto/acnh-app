@@ -6,8 +6,8 @@ import styles from './MoreListScreen.styles'
 
 const MoreListScreen = () => {
   return (
-    <View>
-      <Text>MoreListScreen</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>MoreListScreen</Text>
     </View>
   )
 }

@@ -1,9 +1,12 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
+  cardList: {
+    flex: 1,
+    paddingHorizontal: 20,
+    backgroundColor: '#897e88'
+  },
   container: {
-    paddingHorizontal: 10,
-    width: '100%',
     backgroundColor: '#897e88',
   },
   list: {

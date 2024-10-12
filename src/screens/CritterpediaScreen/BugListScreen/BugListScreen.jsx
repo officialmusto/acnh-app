@@ -6,8 +6,8 @@ import styles from './BugListScreen.styles'
 
 const BugListScreen = () => {
   return (
-    <View>
-      <Text>BugListScreen</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>BugListScreen</Text>
     </View>
   )
 }

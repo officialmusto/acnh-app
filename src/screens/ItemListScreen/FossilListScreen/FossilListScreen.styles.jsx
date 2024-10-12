@@ -1,9 +1,12 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
-  card: {
-    flex: 1
-  }
+  container: {
+    paddingHorizontal: 6,
+  },
+  text: {
+    fontSize: 30,
+  },
 })
 
 export default styles

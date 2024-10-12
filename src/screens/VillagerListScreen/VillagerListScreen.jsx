@@ -21,18 +21,19 @@ const VillagerListScreen = () => {
   }, [])
 
   return (
-    <View style={styles.container}>
-      {loading ? (
-        <ActivityIndicator size="large" color="#F3E0C0" />
-      ) : (
-        <FlatList
-          data={villagers}
-          renderItem={({ item }) => <Villager villager={item}/>}
-          keyExtractor={(item) => item.image_url}
-          contentContainerStyle={styles.list}
-          decelerationRate="fast"
-        />
-      )}
+    <View style={styles.cardList}>
+      <View style={styles.container}>
+        {loading ? (
+          <ActivityIndicator size="large" color="#F3E0C0" />
+        ) : (
+          <FlatList
+            data={villagers}
+            renderItem={({ item }) => <Villager villager={item}/>}
+            keyExtractor={(item) => item.image_url}
+            contentContainerStyle={styles.list}
+          />
+        )}
+      </View>
     </View>
   )
 }

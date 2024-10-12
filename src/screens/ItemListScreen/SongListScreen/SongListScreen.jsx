@@ -6,8 +6,8 @@ import styles from './SongListScreen.styles'
 
 const SongListScreen = () => {
   return (
-    <View>
-      <Text>SongListScreen</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>SongListScreen</Text>
     </View>
   )
 }
