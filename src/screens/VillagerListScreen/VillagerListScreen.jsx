@@ -4,7 +4,7 @@ import { getVillagers } from '../../utils/api-calls'
 import styles from './VillagerListScreen.styles'
 import Villager from '../../components/Villager/Villager'
 
-const VillagerList = () => {
+const VillagerListScreen = () => {
   const [villagers, setVillagers] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -37,4 +37,4 @@ const VillagerList = () => {
   )
 }
 
-export default VillagerList
+export default VillagerListScreen

@@ -1,15 +1,17 @@
-import { SafeAreaView } from 'react-native';
+import React from 'react'
+import { View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import MainTabNavigator from './navigation/MainTabNavigator'
 
 // stylesheet:
 import styles from './App.styles'
 
-import VillagerList from './screens/VillagerListScreen/VillagerListScreen';
-
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <VillagerList styles={styles.cardContainer} />
-    </SafeAreaView>
-  );
+    <NavigationContainer>
+      <View style={styles.container}>
+        <MainTabNavigator />
+      </View>
+    </NavigationContainer>
+  )
 }
-

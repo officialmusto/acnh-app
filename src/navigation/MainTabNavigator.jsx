@@ -1,32 +1,25 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { NavigationContainer } from '@react-navigation/native'
 
-// Import your screens
-import HomeScreen from '../features/home/HomeScreen'
-import VillagersScreen from '../features/villagers/VillagerListScreen'
-import MoreScreen from '../features/more/MoreScreen'
+// import screens:
+import HomeScreen from '../screens/HomeScreen/HomeScreen'
+import ItemTopTabNavigator from './ItemTopTabNavigator'
+import VillagerListScreen from '../screens/VillagerListScreen/VillagerListScreen'
+import CritterpediaTopTabNavigator from './CritterpediaTabNavigation'
+import MoreListScreen from '../screens/MoreListScreen/MoreListScreen'
 
-// Import the navigator for sub-tabs (Items: Fish, Bugs, Fossils)
-import ItemTabNavigator from './ItemTabNavigator'
-
-const Tab = createBottomTabNavigator()
-
-const TabGroup = () => {
-  <Tab.Navigator>
-    <Tab.Screen name="Home" component={HomeScreen} />
-    <Tab.Screen name="Items" component={ItemTabNavigator} />  {/* Nested Tabs */}
-    <Tab.Screen name="Villagers" component={VillagersScreen} />
-    <Tab.Screen name="More" component={MoreScreen} />
-  </Tab.Navigator>
-}
+const BottomTab = createBottomTabNavigator()
 
 const MainTabNavigator = () => {
   return (
-    <NavigationContainer>
-      <TabGroup />
-    </NavigationContainer>
-  )
-}
+    <BottomTab.Navigator>
+      <BottomTab.Screen name="Home" component={HomeScreen} />
+      {/* <BottomTab.Screen name="Items" component={ItemTopTabNavigator} /> */}
+      <BottomTab.Screen name="Villagers" component={VillagerListScreen} />
+      {/* <BottomTab.Screen name="Critterpedia" component={CritterpediaTopTabNavigator} /> */}
+      <BottomTab.Screen name="More" component={MoreListScreen} />
+    </BottomTab.Navigator>
+  );
+};
 
 export default MainTabNavigator
