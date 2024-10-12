@@ -4,16 +4,16 @@ import SongListScreen from '../screens/ItemListScreen/SongListScreen/SongListScr
 import FossilListScreen from '../screens/ItemListScreen/FossilListScreen/FossilListScreen'
 import PosterListScreen from '../screens/ItemListScreen/PosterListScreen/PosterListScreen'
 
-const TopTab = createMaterialTopTabNavigator()
+const TopTabs = createMaterialTopTabNavigator()
 
 const ItemTopTabNavigator = () => {
   return (
-    <TopTab.Navigator>
-      <TopTab.Screen name="Songs" component={SongListScreen} />
-      <TopTab.Screen name="Fossils" component={FossilListScreen} />
-      <TopTab.Screen name="Posters" component={PosterListScreen} />
-    </TopTab.Navigator>
-  );
-};
+    <TopTabs.Navigator>
+      <TopTabs.Screen name="Songs" component={SongListScreen} />
+      <TopTabs.Screen name="Fossils" component={FossilListScreen} />
+      <TopTabs.Screen name="Posters" component={PosterListScreen} />
+    </TopTabs.Navigator>
+  )
+}
 
 export default ItemTopTabNavigator

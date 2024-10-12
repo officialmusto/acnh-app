@@ -3,14 +3,14 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import BugListScreen from '../screens/CritterpediaScreen/BugListScreen/BugListScreen'
 import FishListScreen from '../screens/CritterpediaScreen/FishListScreen/FishListScreen'
 
-const TopTab = createMaterialTopTabNavigator()
+const TopTabs = createMaterialTopTabNavigator()
 
 const CritterpediaTopTabNavigator = () => {
   return (
-    <TopTab.Navigator>
-      <TopTab.Screen name="Bugs" component={BugListScreen} />
-      <TopTab.Screen name="Fish" component={FishListScreen} />
-    </TopTab.Navigator>
+    <TopTabs.Navigator>
+      <TopTabs.Screen name="Bugs" component={BugListScreen} />
+      <TopTabs.Screen name="Fish" component={FishListScreen} />
+    </TopTabs.Navigator>
   );
 };
 
