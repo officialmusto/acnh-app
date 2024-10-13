@@ -26,39 +26,39 @@ const MainTabNavigator = () => {
         name="Home"
         component={HomeScreen}
         options={{
-          tabBarIcon: ({ color }) => <FontAwesome5 name="home" size={24} color="#8a735e" />,
+          tabBarIcon: () => <FontAwesome5 name="home" size={24} color="#8a735e" />,
         }}
       />
       <Tab.Screen
         name="Items"
         component={ItemTopTabNavigator}
         options={{
-          tabBarIcon: ({ color }) => <Entypo name="database" size={24} color="#8a735e" />,
+          tabBarIcon: () => <Entypo name="database" size={24} color="#8a735e" />,
         }}
       />
       <Tab.Screen
         name="Villagers"
         component={VillagerListScreen}
         options={{
-          tabBarIcon: ({ color }) => <FontAwesome name="users" size={22} color="#8a735e" />,
+          tabBarIcon: () => <FontAwesome name="users" size={22} color="#8a735e" />,
         }}
       />
       <Tab.Screen
         name="Critterpedia"
         component={CritterpediaTopTabNavigator}
         options={{
-          tabBarIcon: ({ color }) => <Entypo name="bug" size={24} color="#8a735e" />,
+          tabBarIcon: () => <Entypo name="bug" size={24} color="#8a735e" />,
         }}
       />
       <Tab.Screen
         name="More"
         component={MoreListScreen}
         options={{
-          tabBarIcon: ({ color }) => <Entypo name="dial-pad" size={24} color="#8a735e" />,
+          tabBarIcon: () => <Entypo name="dial-pad" size={24} color="#8a735e" />,
         }}
       />
     </Tab.Navigator>
   );
-};
+}
 
 export default MainTabNavigator
