@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#CABAC8',
     borderRadius: 14,
-    padding: 20,
+    padding: 10,
     paddingRight: 4,
     paddingLeft: 4,
     marginVertical: 10,
