@@ -15,8 +15,8 @@ const Villager = ({ villager }) => {
       />
 
       <View style={styles.textContainer}>
-        <Text style={[styles.name, { color: `#${villager.title_color}`}]}>{villager.name}</Text>
 
+        <Text style={[styles.name, { color: `#${villager.title_color}`}]}>{villager.name}</Text>
         <View style={styles.infoSection}>
           <View style={styles.iconTextRow}>
             <Icon name="birthday-cake" size={13.575} color={`#${villager.title_color}`}/>

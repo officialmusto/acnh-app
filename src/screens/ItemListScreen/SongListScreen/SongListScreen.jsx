@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native'
+import { Text, View, SafeAreaView } from 'react-native'
 import React from 'react'
 
 // stylesheet:
@@ -6,9 +6,9 @@ import styles from './SongListScreen.styles'
 
 const SongListScreen = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.text}>SongListScreen</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 

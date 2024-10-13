@@ -1,4 +1,4 @@
-import { Text, View, FlatList, ActivityIndicator} from 'react-native'
+import { Text, View, SafeAreaView, FlatList, ActivityIndicator} from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { getFishes } from '../../../utils/api-calls'
 import styles from '../FishListScreen/FishListScreen.styles'
@@ -22,7 +22,7 @@ const FishListScreen = () => {
   }, [])
 
   return (
-    <View>
+    <SafeAreaView>
         <View style={styles.container}>
           {loading ? (
           <ActivityIndicator size="large" color="#F3E0C0" />
@@ -33,7 +33,7 @@ const FishListScreen = () => {
             keyExtractor={(item) => item.name}/>
           )}
       </View>
-    </View>
+    </SafeAreaView>
   )
 }
 

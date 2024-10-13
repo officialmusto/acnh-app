@@ -1,4 +1,4 @@
-import { Text, View, FlatList, ActivityIndicator} from 'react-native'
+import { Text, SafeAreaView, View, FlatList, ActivityIndicator} from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { getPosters } from '../../../utils/api-calls'
 import styles from '../../ItemListScreen/FossilListScreen/FossilListScreen.styles'
@@ -22,7 +22,7 @@ const PosterListScreen = () => {
   }, [])
 
   return (
-    <View>
+    <SafeAreaView>
         <View style={styles.container}>
           {loading ? (
           <ActivityIndicator size="large" color="#F3E0C0" />
@@ -34,7 +34,7 @@ const PosterListScreen = () => {
             />
           )}
       </View>
-    </View>
+    </SafeAreaView>
   )
 }
 
