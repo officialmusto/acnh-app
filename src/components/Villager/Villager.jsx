@@ -1,4 +1,4 @@
-import { Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import styles from './Villager.styles'
 import React from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome'
@@ -13,18 +13,18 @@ const Villager = ({ villager }) => {
       />
 
       <View style={styles.textContainer}>
-        <Text style={styles.name}>{villager.name}</Text>
+        <Text style={[styles.name, { color: `#${villager.title_color}`}]}>{villager.name}</Text>
 
         <View style={styles.infoSection}>
           <View style={styles.iconTextRow}>
-            <Icon name="birthday-cake" size={13.575} color="#fff3ff" />
+            <Icon name="birthday-cake" size={13.575} color={`#${villager.title_color}`}/>
             <Text style={styles.infoText}>
               {villager.birthday_month} {villager.birthday_day}
             </Text>
           </View>
 
           <View style={styles.iconTextRow}>
-            <Icon name="comment" size={14} color="#fff3ff" />
+            <Icon name="comment" size={14} color={`#${villager.title_color}`} />
             <Text style={styles.infoText}>"{villager.phrase}"</Text>
           </View>
         </View>

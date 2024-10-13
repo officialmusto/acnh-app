@@ -30,9 +30,12 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#3B3B4F',
+    textShadowColor: "white",
+    textShadowOffset: { width: .5, height: .5 },
+    textShadowRadius: 3,
   },
   infoSection: {
+    margin: 20,
     backgroundColor: '#baa8b7',
     borderRadius: 8,
     padding: 10,
