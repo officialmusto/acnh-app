@@ -62,5 +62,3 @@ const MainTabNavigator = () => {
 };
 
 export default MainTabNavigator
-
-//? honestly, not sure if 3 files for tabs is necessary? is that even convention.

@@ -40,4 +40,3 @@ const BugListScreen = () => {
 
 export default BugListScreen
 
-//? why noe extend full width and why scrollbar have same issue as villager-tab

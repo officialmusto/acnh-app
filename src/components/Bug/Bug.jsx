@@ -18,5 +18,3 @@ const Bug = ({ bug }) => {
 }
 
 export default Bug
-
-//? figure out styling for this section. 

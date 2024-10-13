@@ -3,13 +3,24 @@ import { StyleSheet } from "react-native"
 const styles = StyleSheet.create({
   body: {
     borderWidth: 2,
+    padding: 10,
+    margin: 13,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  image: {
+  imageContainer: {
+    alignItems: 'center',
+    flexDirection: 'row'
+  },
+  photo: {
+    width: 120,
+    height: 120,
+  },
+  poster: {
     width: 100,
     height: 100,
   },
+
 })
 
 export default styles

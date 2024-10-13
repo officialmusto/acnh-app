@@ -19,4 +19,3 @@ const Fish = ({ fish }) => {
 
 export default Fish
 
-//? figure out styling for this section. 

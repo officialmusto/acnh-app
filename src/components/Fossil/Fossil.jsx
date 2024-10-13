@@ -23,4 +23,3 @@ const Fossil = ({ fossil }) => {
 
 export default Fossil
 
-//? find a way to properly display this information, then remove border lines.
