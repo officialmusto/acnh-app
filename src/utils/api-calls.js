@@ -82,3 +82,22 @@ export async function getBugs() {
     throw error
   }
 }
+
+export async function getPosters() {
+  try {
+    const response = await fetch(`${BASE_URL}/nh/photos`, {
+      headers: {
+        'X-API-KEY': API_KEY,
+      },
+    })
+
+    // Wait for the response and parse it as JSON
+    const data = await response.json()
+
+    // Return the data
+    return data
+  } catch (error) {
+    console.error("Failed to load photos:", error)
+    throw error
+  }
+}
