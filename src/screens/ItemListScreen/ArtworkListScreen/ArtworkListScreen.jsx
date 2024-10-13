@@ -1,18 +1,18 @@
 import { Text, SafeAreaView, View, FlatList, ActivityIndicator} from 'react-native'
 import React, { useState, useEffect } from 'react'
-import { getPosters } from '../../../utils/api-calls'
-import styles from '../../ItemListScreen/FossilListScreen/FossilListScreen.styles'
-import Poster from '../../../components/Poster/Poster'
+import { getArtwork } from '../../../utils/api-calls'
+import styles from '../FossilListScreen/FossilListScreen.styles'
+import Artwork from '../../../components/Artwork/Artwork'
 
-const PosterListScreen = () => {
-  const [posters, setPosters] = useState([])
+const ArtworkListScreen = () => {
+  const [artwork, setArtwork] = useState([])
   const [loading, setLoading] = useState([])
   
 
   useEffect(() => {
-    getPosters()
-      .then(PosterData => {
-        setPosters(PosterData)
+    getArtwork()
+      .then(ArtworkData => {
+        setArtwork(ArtworkData)
         setLoading(false)
       })
       .catch(error => {
@@ -28,8 +28,8 @@ const PosterListScreen = () => {
           <ActivityIndicator size="large" color="#F3E0C0" />
           ) : (
           <FlatList
-            data={posters}
-            renderItem={({ item }) => <Poster poster={item}/>}
+            data={artwork}
+            renderItem={({ item }) => <Artwork artwork={item}/>}
             keyExtractor={(item) => item.name}
             />
           )}
@@ -38,4 +38,4 @@ const PosterListScreen = () => {
   )
 }
 
-export default PosterListScreen
+export default ArtworkListScreen

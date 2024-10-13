@@ -83,7 +83,7 @@ export async function getBugs() {
   }
 }
 
-export async function getPosters() {
+export async function getArtwork() {
   try {
     const response = await fetch(`${BASE_URL}/nh/photos`, {
       headers: {
@@ -97,7 +97,7 @@ export async function getPosters() {
     // Return the data
     return data
   } catch (error) {
-    console.error("Failed to load photos:", error)
+    console.error("Failed to load artwork:", error)
     throw error
   }
 }

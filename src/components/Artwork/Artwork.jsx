@@ -1,15 +1,15 @@
 import { SafeAreaView, Text, View, Image } from 'react-native'
-import styles from '../Poster/Poster.styles'
+import styles from './Artwork.styles'
 import React from 'react'
 
-const Poster = ({ poster }) => {
+const Artwork = ({ artwork }) => {
   return (
     <SafeAreaView style={styles.body}>
       <View>
-        <Text>{poster.name}</Text>
+        <Text>{artwork.name}</Text>
       </View>
     </SafeAreaView>
   )
 }
 
-export default Poster
+export default Artwork
