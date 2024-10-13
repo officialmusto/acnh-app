@@ -4,10 +4,12 @@ import React from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 const Villager = ({ villager }) => {
-  return (
+  if (!villager.nh_details || !villager.nh_details.icon_url) {
+    return null
+  }  return (
     <View style={styles.card}>
       <Image
-        source={{ uri: villager.image_url }}
+        source={{ uri: villager.nh_details.icon_url }}
         style={styles.image}
         resizeMode="contain"
       />

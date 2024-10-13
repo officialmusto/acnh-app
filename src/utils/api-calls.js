@@ -4,7 +4,7 @@ const BASE_URL = 'https://api.nookipedia.com'
 
 export async function getVillagers() {
   try {
-    const response = await fetch(`${BASE_URL}/villagers`, {
+    const response = await fetch(`${BASE_URL}/villagers?nhdetails=true`, {
       headers: {
         'X-API-KEY': API_KEY,
       },
