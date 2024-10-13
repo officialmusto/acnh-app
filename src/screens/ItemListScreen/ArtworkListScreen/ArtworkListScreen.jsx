@@ -39,3 +39,5 @@ const ArtworkListScreen = () => {
 }
 
 export default ArtworkListScreen
+
+//? figure out why this one extends full width of screen but fish & bugs don't

@@ -36,3 +36,5 @@ const Villager = ({ villager }) => {
 };
 
 export default Villager
+
+//! WHY DOESN'T SCROLL WHEEL SEPARATE FROM VILLAGER-CARDS!!

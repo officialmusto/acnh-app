@@ -4,8 +4,13 @@ import React from 'react'
 
 const Bug = ({ bug }) => {
   return (
-    <SafeAreaView style={styles.body}>
-      <View>
+    <SafeAreaView style={styles.card}>
+      <View style={styles.card}>
+        <Image
+        source={{ uri: bug.image_url}}
+        style={styles.image}
+        resizeMode="contain"
+        />
         <Text>{bug.name}</Text>
       </View>
     </SafeAreaView>
@@ -13,3 +18,5 @@ const Bug = ({ bug }) => {
 }
 
 export default Bug
+
+//? figure out styling for this section. 

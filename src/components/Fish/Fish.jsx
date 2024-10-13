@@ -4,8 +4,13 @@ import React from 'react'
 
 const Fish = ({ fish }) => {
   return (
-    <SafeAreaView style={styles.body}>
-      <View>
+    <SafeAreaView>
+      <View style={styles.card}>
+        <Image
+        source={{ uri: fish.image_url }}
+        style={styles.image}
+        resizeMode="contain"
+        />
         <Text>{fish.name}</Text>
       </View>
     </SafeAreaView>
@@ -13,3 +18,5 @@ const Fish = ({ fish }) => {
 }
 
 export default Fish
+
+//? figure out styling for this section. 
