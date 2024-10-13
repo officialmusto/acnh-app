@@ -1,13 +1,39 @@
-import { Text, View } from 'react-native'
-import React from 'react'
-
-// stylesheet:
-import styles from './BugListScreen.styles'
+import { Text, View, FlatList, ActivityIndicator} from 'react-native'
+import React, { useState, useEffect } from 'react'
+import { getBugs } from '../../../utils/api-calls'
+import styles from '../BugListScreen/BugListScreen.styles'
+import Bug from '../../../components/Bug/Bug'
 
 const BugListScreen = () => {
+  const [bugs, setBugs] = useState([])
+  const [loading, setLoading] = useState([])
+  
+
+  useEffect(() => {
+    getBugs()
+      .then(BugData => {
+        setBugs(BugData)
+        setLoading(false)
+      })
+      .catch(error => {
+        console.error("Error fetching bugs:", error)
+        setLoading(false)
+      })
+  }, [])
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>BugListScreen</Text>
+    <View>
+        <View style={styles.container}>
+          {loading ? (
+          <ActivityIndicator size="large" color="#F3E0C0" />
+          ) : (
+          <FlatList
+            data={bugs}
+            renderItem={({ item }) => <Bug bug={item}/>}
+            keyExtractor={(item) => item.name}
+            />
+          )}
+      </View>
     </View>
   )
 }
