@@ -38,5 +38,3 @@ const FishListScreen = () => {
 }
 
 export default FishListScreen
-
-//? why noe extend full width and why scrollbar have same issue as villager-tab

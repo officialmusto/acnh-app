@@ -32,9 +32,7 @@ const Villager = ({ villager }) => {
         </View>
       </View>
     </View>
-  );
-};
+  )
+}
 
 export default Villager
-
-//! WHY DOESN'T SCROLL WHEEL SEPARATE FROM VILLAGER-CARDS!!

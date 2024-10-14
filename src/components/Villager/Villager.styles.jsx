@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
   card: {
-    justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#CABAC8',
