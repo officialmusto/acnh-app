@@ -9,19 +9,21 @@ const Villager = ({ villager }) => {
     return null
   }  return (
     <View style={styles.card}>
-      <Image
-        source={{ uri: villager.nh_details.icon_url }}
-        style={styles.image}
-        resizeMode="contain"
-      />
+
+      <View style={styles.imageBackground}>
+        <Image
+          source={{ uri: villager.nh_details.icon_url }}
+          style={styles.image}
+        />
+      </View>
 
       <View style={styles.textContainer}>
 
-        <Text style={[styles.name, { color: `#${villager.title_color}`}]}>{villager.name}</Text>
+        <Text style={styles.name}>{villager.name}</Text>
         <View style={styles.infoSection}>
 
           <View style={styles.iconTextRow}>
-            <Icon name="birthday-cake" size={10.575} color={`#${villager.title_color}`}/>
+            <Icon name='birthday-cake' size={10.575} color={`#${villager.title_color}`}/>
             <Text style={styles.infoText}>
               {villager.birthday_month} {villager.birthday_day}
             </Text>

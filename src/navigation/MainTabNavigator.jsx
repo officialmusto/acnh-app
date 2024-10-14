@@ -14,11 +14,12 @@ import MoreListScreen from '../screens/MoreListScreen/MoreListScreen'
 const Tab = createBottomTabNavigator()
 
 const MainTabNavigator = () => {
+  const tabIconColor = "#4e9aa0"
   return (
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: '#f2caa4',
+          backgroundColor: '#91d7db',
         },
       }}
     >
@@ -26,28 +27,28 @@ const MainTabNavigator = () => {
         name="Home"
         component={HomeScreen}
         options={{
-          tabBarIcon: () => <FontAwesome5 name="home" size={24} color="#8a735e" />,
+          tabBarIcon: () => <FontAwesome5 name="home" size={24} color={tabIconColor} />,
         }}
       />
       <Tab.Screen
         name="Items"
         component={ItemTopTabNavigator}
         options={{
-          tabBarIcon: () => <Entypo name="database" size={24} color="#8a735e" />,
+          tabBarIcon: () => <Entypo name="database" size={24} color={tabIconColor}/>,
         }}
       />
       <Tab.Screen
         name="Villagers"
         component={VillagerListScreen}
         options={{
-          tabBarIcon: () => <FontAwesome name="users" size={22} color="#8a735e" />,
+          tabBarIcon: () => <FontAwesome name="users" size={22} color={tabIconColor} />,
         }}
       />
       <Tab.Screen
         name="Critterpedia"
         component={CritterpediaTopTabNavigator}
         options={{
-          tabBarIcon: () => <Entypo name="bug" size={24} color="#8a735e" />,
+          tabBarIcon: () => <Entypo name="bug" size={24} color={tabIconColor} />,
         }}
       />
       <Tab.Screen
