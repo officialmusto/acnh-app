@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   card: {
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     shadowColor: '#151615',
     shadowOffset: { width: 0, height: 14 },
-    shadowOpacity: .149,
+    shadowOpacity: 0.149,
     shadowRadius: 2,
   },
   image: {
@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
     fontSize: 23,
     color: '#3f3c39',
     fontWeight: 'bold',
-    textShadowColor: "white",
-    textShadowOffset: { width: .5, height: .5 },
+    textShadowColor: 'white',
+    textShadowOffset: { width: 0.5, height: 0.5 },
     textShadowRadius: 3,
   },
   infoSection: {
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
   iconTextRow: {
     margin: 3,
-    backgroundColor: "#3f3c39",
+    backgroundColor: '#3f3c39',
     borderRadius: 32,
     padding: 8,
     paddingLeft: 10,
@@ -67,39 +67,4 @@ const styles = StyleSheet.create({
   },
 })
 
-
-const modalStyles = StyleSheet.create({
-  modalOverlay: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  modalContent: {
-    width: '100%',
-    height: '100%',
-    padding: 20,
-    backgroundColor: '#faf3ec',
-    borderRadius: 20,
-    alignItems: 'center',
-  },
-  modalTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  modalImage: {
-    width: 100,
-    height: 100,
-  },
-  modalText: {
-    fontSize: 16,
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-})
-
-export {
-  styles,
-  modalStyles,
-}
+export default styles
