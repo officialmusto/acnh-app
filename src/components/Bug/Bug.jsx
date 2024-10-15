@@ -4,14 +4,14 @@ import React from 'react'
 
 const Bug = ({ bug }) => {
   return (
-    <SafeAreaView style={styles.card}>
+    <SafeAreaView >
       <View style={styles.card}>
         <Image
         source={{ uri: bug.image_url}}
         style={styles.image}
         resizeMode="contain"
         />
-        <Text>{bug.name}</Text>
+        <Text style={styles.name}>{bug.name}</Text>
       </View>
     </SafeAreaView>
   )

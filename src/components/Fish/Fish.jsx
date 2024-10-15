@@ -11,7 +11,7 @@ const Fish = ({ fish }) => {
         style={styles.image}
         resizeMode="contain"
         />
-        <Text>{fish.name}</Text>
+        <Text style={styles.name}>{fish.name}</Text>
       </View>
     </SafeAreaView>
   )

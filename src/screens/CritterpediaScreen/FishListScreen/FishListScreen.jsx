@@ -23,7 +23,7 @@ const FishListScreen = () => {
 
   return (
     <SafeAreaView>
-        <View style={styles.container}>
+        <View style={styles.cardList}>
           {loading ? (
           <ActivityIndicator size="large" color="#F3E0C0" />
           ) : (
