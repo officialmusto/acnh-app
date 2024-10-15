@@ -13,23 +13,24 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
   },
   imageContainer: {
-    flex: 1,
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     flexDirection: 'row'
   },
   photo: {
-    flex: 1,
     width: 100,
     height: 120,
   },
   poster: {
-    flex: 1,
     width: 100,
     height: 100,
   },
   text: {
+    fontSize: 20,
+    color: '#3f3c39',
     alignSelf: 'center',
     fontWeight: 'bold',
+    padding: 10,
   }
 
 })
