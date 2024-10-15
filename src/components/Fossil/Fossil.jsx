@@ -4,9 +4,10 @@ import React from 'react'
 
 const Fossil = ({ fossil }) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.card}>
       <Text style={styles.mainFossilName}>{fossil.name}</Text>
 
+    <View style={styles.fossilPartSection}>
       {fossil.fossils.map((part) => (
         <View key={part.name} style={styles.fossilPart}>
           <Text style={styles.partName}>{part.name}</Text>
@@ -15,8 +16,10 @@ const Fossil = ({ fossil }) => {
             style={styles.image}
             resizeMode="contain"
           />
+          
         </View>
       ))}
+      </View>
     </View>
   )
 }

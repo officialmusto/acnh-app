@@ -1,33 +1,43 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 2,
-    padding: 10,
-    backgroundColor: '#fff',
-    borderRadius: 8,
+  card: {
+    padding: 12,
+    margin: 10,
+    backgroundColor: '#faf3ec',
+    borderRadius: 29,
+    marginVertical: 10,
+    shadowColor: '#151615',
+    shadowOffset: { width: 0, height: 14 },
+    shadowOpacity: .149,
+    shadowRadius: 2,
   },
   mainFossilName: {
-    borderWidth: 2,
-    fontSize: 20,
+    alignSelf: 'center',
+    fontSize: 22,
     fontWeight: 'bold',
     color: '#333',
   },
   fossilPart: {
-    borderWidth: 2,
+    padding: 10,
+    alignItems: 'center',
+    backgroundColor: '#e7d0c0',
+    flex: 1,
+    margin: 5,
+    borderRadius: 22,
+  },
+  fossilPartSection: {
+    justifyContent: 'center',
+    flexDirection: 'row'
   },
   partName: {
-    borderWidth: 2,
-    fontSize: 16,
-    fontWeight: '500',
+    fontSize: 11,
+    fontWeight: 'bold',
     color: '#555',
   },
   image: {
-    borderWidth: 2,
-    width: 100,
-    height: 100,
+    width: 50,
+    height: 50,
   },
 })
 

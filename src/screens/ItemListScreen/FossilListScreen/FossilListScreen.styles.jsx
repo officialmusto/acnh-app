@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
-  container: {
-    paddingHorizontal: 6,
+  cardList: {
+    backgroundColor: '#e7d0c0',
   },
   text: {
     fontSize: 30,
