@@ -19,13 +19,13 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
-    imageBackground: {
-      backgroundColor: '#e7d0c0',
-      alignContent: 'center',
-      padding: 14,
-      borderRadius: 100,
-      marginRight: 20,
-    },
+  imageBackground: {
+    backgroundColor: '#e7d0c0',
+    alignContent: 'center',
+    padding: 14,
+    borderRadius: 100,
+    marginRight: 20,
+  },
   textContainer: {
     flex: 1,
     flexDirection: 'row',
@@ -67,4 +67,39 @@ const styles = StyleSheet.create({
   },
 })
 
-export default styles
+
+const modalStyles = StyleSheet.create({
+  modalOverlay: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContent: {
+    width: '100%',
+    height: '100%',
+    padding: 20,
+    backgroundColor: '#faf3ec',
+    borderRadius: 20,
+    alignItems: 'center',
+  },
+  modalTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  modalImage: {
+    width: 100,
+    height: 100,
+  },
+  modalText: {
+    fontSize: 16,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+})
+
+export {
+  styles,
+  modalStyles,
+}
