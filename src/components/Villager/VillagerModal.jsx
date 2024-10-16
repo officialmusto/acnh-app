@@ -11,11 +11,14 @@ const VillagerModal = ({ villager, visible, onClose }) => (
   <Modal visible={visible} animationType="slide" transparent={true} onRequestClose={onClose}>
     <SafeAreaView style={styles.modalOverlay}>
       <View style={styles.modalContent}>
-        <Text style={styles.modalTitle}>{villager.name}'s Details.</Text>
+
+        <Text style={styles.modalTitle}>{villager.name}'s Details</Text>
+
         <Image source={{ uri: villager.nh_details.image_url }} style={styles.modalImage} resizeMode="contain" />
 
-        <View style={styles.descText}>
-          <Text style={styles.modalTitle}>"{villager.nh_details.quote}"</Text>
+        <View style={styles.quoteBox}>
+          <Foundation name="quote" size={40.575} color={`#${villager.title_color}`} />
+          <Text style={styles.quoteText}>{villager.nh_details.quote}</Text>
         </View>
 
         <View style={styles.iconSection}>
@@ -53,14 +56,18 @@ const VillagerModal = ({ villager, visible, onClose }) => (
 
         </View>
 
-        <Image 
-        source={{ uri: villager.nh_details.house_exterior_url }} 
-        style={styles.villagerHome} 
-        resizeMode="contain" />
+
+        <View style={styles.vilHomeSection}>
+          <Text style={styles.vilHomeText}>{villager.name}'s Home</Text>
+          <Image 
+          source={{ uri: villager.nh_details.house_exterior_url }} 
+          style={styles.vilHomeImage} 
+          resizeMode="contain" />
+        </View>
 
 
         <TouchableOpacity style={styles.btn} onPress={onClose}>
-          <Text style={[ styles.btnText, { color: `#${villager.title_color}` }]}>Close</Text>
+          <Text style={styles.btnText}>Close</Text>
         </TouchableOpacity>
         
       </View>
