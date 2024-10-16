@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     shadowColor: '#151615',
     shadowOffset: { width: 0, height: 14 },
     shadowOpacity: 0.149,
-    shadowRadius: 2,
+    shadowRadius: 8,
   },
   image: {
     borderRadius: 1,

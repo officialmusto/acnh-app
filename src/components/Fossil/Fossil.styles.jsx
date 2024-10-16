@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     shadowColor: '#151615',
     shadowOffset: { width: 0, height: 14 },
     shadowOpacity: .149,
-    shadowRadius: 2,
+    shadowRadius: 8,
   },
   mainFossilName: {
     alignSelf: 'center',
@@ -28,7 +28,11 @@ const styles = StyleSheet.create({
   },
   fossilPartSection: {
     justifyContent: 'center',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    shadowColor: '#151615',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: .149,
+    shadowRadius: 6,
   },
   partName: {
     fontSize: 11,

@@ -3,7 +3,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
 import FontAwesome from '@expo/vector-icons/FontAwesome'
 import Entypo from '@expo/vector-icons/Entypo'
-import { TouchableOpacity } from 'react-native-gesture-handler'
 
 import HomeScreen from '../screens/HomeScreen/HomeScreen'
 import ItemTopTabNavigator from './ItemTopTabNavigator'

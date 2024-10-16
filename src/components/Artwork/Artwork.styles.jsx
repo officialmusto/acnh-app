@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     shadowColor: '#151615',
     shadowOffset: { width: 0, height: 14 },
     shadowOpacity: .149,
-    shadowRadius: 2,
+    shadowRadius: 8,
   },
   imageContainer: {
     justifyContent: 'space-evenly',

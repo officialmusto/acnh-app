@@ -41,6 +41,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     width: '45%',
+    shadowColor: '#151615',
+    shadowOffset: { width: 0, height: 7 },
+    shadowOpacity: 0.37,
+    shadowRadius: 8,
   },
   infoText: {
     paddingLeft: 10,
@@ -59,20 +63,30 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   villagerHome: {
+    margin: 10,
     width: '60%',
-    height: '30%',
+    height: '20%',
+    shadowColor: '#151615',
+    shadowOffset: { width: 0, height: 7 },
+    shadowOpacity: 0.37,
+    shadowRadius: 3,
   },
   btn: {
-
-    color: 'red',
-    fontSize: 18,
-    fontWeight: 'bold',
-    backgroundColor: '#3e3c39',
-    margin: 15,
-    padding: 0,
-    paddingLeft: 45,
-    paddingRight: 45,
+    padding: 10,
+    alignContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#c7c7c7',
+    marginBottom: 0,
+    margin: 7,
     borderRadius: 50,
+    shadowColor: '#151615',
+    shadowOffset: { width: 0, height: 7 },
+    shadowOpacity: 0.37,
+    shadowRadius: 8,
+  },
+  btnText: {
+    fontSize: 15,
+    fontWeight: 'bold',
   }
 })
 
