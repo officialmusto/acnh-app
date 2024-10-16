@@ -5,15 +5,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: '#00000088',
   },
   modalContent: {
+    alignItems: 'center',
     width: '100%',
     height: '100%',
     padding: 20,
     backgroundColor: '#faf3ec',
     borderRadius: 20,
-    alignItems: 'center',
   },
   modalTitle: {
     fontSize: 24,
@@ -27,9 +27,11 @@ const styles = StyleSheet.create({
   iconSection: {
     margin: 13,
     flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
   },
   iconTextRow: {
-    margin: 3,
+    margin: 6,
     backgroundColor: '#3f3c39',
     borderRadius: 32,
     paddingTop: 9,
@@ -38,6 +40,7 @@ const styles = StyleSheet.create({
     paddingRight: 14,
     flexDirection: 'row',
     alignItems: 'center',
+    width: '45%',
   },
   infoText: {
     paddingLeft: 10,
@@ -50,9 +53,26 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     textAlign: 'center',
   },
+  descText: {
+    padding: 10,
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
   villagerHome: {
-    width: '75%',
-    height: '50%',
+    width: '60%',
+    height: '30%',
+  },
+  btn: {
+
+    color: 'red',
+    fontSize: 18,
+    fontWeight: 'bold',
+    backgroundColor: '#3e3c39',
+    margin: 15,
+    padding: 0,
+    paddingLeft: 45,
+    paddingRight: 45,
+    borderRadius: 50,
   }
 })
 
