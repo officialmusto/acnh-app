@@ -27,34 +27,34 @@ const VillagerModal = ({ villager, visible, onClose }) => {
 
           <View style={styles.iconSection}>
 
-          <View style={styles.iconTextRow} backgroundColor={`#${villager.text_color}`}>
-            <Icon name='birthday-cake' size={15.575} color={`#${villager.title_color}`} />
-            <Text style={[styles.infoText, { color: `#${villager.title_color}` }]}>{villager.birthday_month} {villager.birthday_day}</Text>
+          <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
+            <Icon name='birthday-cake' size={15.575} color={`#${villager.text_color}`} />
+            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.birthday_month} {villager.birthday_day}</Text>
           </View>
 
-          <View style={styles.iconTextRow} backgroundColor={`#${villager.text_color}`}>
-            <Icon name="comment" size={16.5} color={`#${villager.title_color}`} />
-            <Text style={[styles.infoText, { color: `#${villager.title_color}` }]}>"{villager.phrase}"</Text>
+          <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
+            <Icon name="comment" size={16.5} color={`#${villager.text_color}`} />
+            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>"{villager.phrase}"</Text>
           </View>
 
-          <View style={styles.iconTextRow} backgroundColor={`#${villager.text_color}`}>
-            <Foundation name="music" size={19} color={`#${villager.title_color}`} />
-            <Text style={[styles.infoText, { color: `#${villager.title_color}` }]}>{villager.nh_details.house_music}</Text>
+          <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
+            <Foundation name="music" size={19} color={`#${villager.text_color}`} />
+            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.nh_details.house_music}</Text>
           </View>
 
-          <View style={styles.iconTextRow} backgroundColor={`#${villager.text_color}`}>
-            <Ionicons name="color-palette" size={19} color={`#${villager.title_color}`} />
-            <Text style={[styles.infoText, { color: `#${villager.title_color}` }]}>{villager.nh_details.fav_colors}</Text>
+          <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
+            <Ionicons name="color-palette" size={19} color={`#${villager.text_color}`} />
+            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.nh_details.fav_colors}</Text>
           </View>
 
-          <View style={styles.iconTextRow} backgroundColor={`#${villager.text_color}`}>
-            <FontAwesome6 name="person-rays" size={17.7} color={`#${villager.title_color}`} />
-            <Text style={[styles.infoText, { color: `#${villager.title_color}` }]}>{villager.personality}</Text>
+          <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
+            <FontAwesome6 name="person-rays" size={17.7} color={`#${villager.text_color}`} />
+            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.personality}</Text>
           </View>
 
-          <View style={styles.iconTextRow} backgroundColor={`#${villager.text_color}`}>
-            <AntDesign name="star" size={17} color={`#${villager.title_color}`}  />
-            <Text style={[styles.infoText, { color: `#${villager.title_color}` }]}>{villager.nh_details.hobby}</Text>
+          <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
+            <AntDesign name="star" size={17} color={`#${villager.text_color}`}  />
+            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.nh_details.hobby}</Text>
           </View>
 
 
