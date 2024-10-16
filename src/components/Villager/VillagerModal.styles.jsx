@@ -49,6 +49,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 10,
     textAlign: 'center',
+  },
+  villagerHome: {
+    width: '75%',
+    height: '50%',
   }
 })
 

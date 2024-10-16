@@ -30,7 +30,13 @@ const VillagerModal = ({ villager, visible, onClose }) => (
 
         </View>
 
+        <Text>Song: {villager.nh_details.house_music}</Text>
+        <Text>Favorite Colors: {villager.nh_details.fav_colors}</Text>
+
+        <Image source={{ uri: villager.nh_details.house_exterior_url }} style={styles.villagerHome} resizeMode="contain" />
         <Button title="Close" onPress={onClose} />
+
+        
       </View>
     </SafeAreaView>
   </Modal>
