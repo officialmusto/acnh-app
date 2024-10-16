@@ -25,7 +25,10 @@ const VillagerListScreen = () => {
       <View style={styles.cardList}>
         <View style={styles.container}>
           {loading ? (
-            <ActivityIndicator size="large" color="#F3E0C0" />
+            <View style={styles.loadingContainer}>
+              <ActivityIndicator size="large" color="#474340" />
+              <Text style={styles.loadingText}>Loading villagers...</Text>
+            </View>
           ) : (
             <FlatList
               data={villagers}

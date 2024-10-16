@@ -15,16 +15,17 @@ const Villager = ({ villager }) => {
   return (
     <>
       <TouchableOpacity onPress={() => setModalVisible(true)}>
-        <View style={styles.card}>
+      <View style={[styles.card, { backgroundColor: `#${villager.text_color}` }]}>
           <View style={styles.imageBackground}>
             <Image
               source={{ uri: villager.nh_details.icon_url }}
               style={styles.image}
+              color={`#${villager.text_color}`}
             />
           </View>
 
           <View style={styles.textContainer}>
-            <Text style={styles.name}>{villager.name}</Text>
+            <Text style={[styles.name, { color: `#${villager.title_color}` }]}>{villager.name}</Text>
 
             <View style={styles.infoSection}>
               <View style={styles.iconTextRow}>

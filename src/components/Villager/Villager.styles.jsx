@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
   card: {
@@ -6,13 +6,14 @@ const styles = StyleSheet.create({
     paddingLeft: 12,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#faf3ec',
     borderRadius: 29,
     marginVertical: 10,
-    shadowColor: '#151615',
-    shadowOffset: { width: 0, height: 14 },
-    shadowOpacity: 0.149,
-    shadowRadius: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.25,
+    shadowRadius: 5,
+    elevation: 6, 
+    backgroundColor: 'transparent',
   },
   image: {
     borderRadius: 1,
@@ -20,7 +21,6 @@ const styles = StyleSheet.create({
     height: 50,
   },
   imageBackground: {
-    backgroundColor: '#e7d0c0',
     alignContent: 'center',
     padding: 14,
     borderRadius: 100,
@@ -34,20 +34,14 @@ const styles = StyleSheet.create({
   },
   name: {
     fontSize: 23,
-    color: '#3f3c39',
     fontWeight: 'bold',
-    textShadowColor: 'white',
-    textShadowOffset: { width: 0.5, height: 0.5 },
-    textShadowRadius: 3,
+    color: '#44413d'
   },
   infoSection: {
     margin: 10,
     padding: 0,
     marginRight: 10,
     flexDirection: 'column',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 6,
   },
   iconTextRow: {
     margin: 3,
@@ -55,7 +49,6 @@ const styles = StyleSheet.create({
     borderRadius: 32,
     padding: 8,
     paddingLeft: 10,
-    justifyContent: 'flex-start',
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -63,7 +56,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     fontSize: 12,
     fontWeight: 'bold',
-    color: '#faf3ec',
+    color: '#e9e9e9',
   },
 })
 

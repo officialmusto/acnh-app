@@ -14,13 +14,13 @@ import MoreListScreen from '../screens/MoreListScreen/MoreListScreen'
 const Tab = createBottomTabNavigator()
 
 const MainTabNavigator = () => {
-  const tabIconColor = "#4e9aa0"
+  const tabIconColor = "#605c57"
   const tabIconColorH = "#0a5d65"
   return (
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: '#91d7db',
+          backgroundColor: '#272523',
         },
       }}
     >
@@ -56,7 +56,7 @@ const MainTabNavigator = () => {
         name="More"
         component={MoreListScreen}
         options={{
-          tabBarIcon: () => <Entypo name="dial-pad" size={24} color="#8a735e" />,
+          tabBarIcon: () => <Entypo name="dial-pad" size={24} color={tabIconColor}/>,
         }}
         />
     </Tab.Navigator>

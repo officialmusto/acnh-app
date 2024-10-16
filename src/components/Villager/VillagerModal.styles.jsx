@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     marginTop: 60,
-    color: '#e9e9e9',
   },
   modalImage: {
     width: 150,
@@ -37,7 +36,6 @@ const styles = StyleSheet.create({
   },
   iconTextRow: {
     margin: 6,
-    backgroundColor: '#514d49',
     borderRadius: 32,
     paddingTop: 9,
     paddingBottom: 9,
@@ -55,7 +53,6 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     fontSize: 12,
     fontWeight: 'bold',
-    color: '#faf3ec',
   },
   modalText: {
     fontSize: 16,
@@ -67,9 +64,7 @@ const styles = StyleSheet.create({
     alignItems: 'center', 
     padding: 10,
     borderRadius: 16,
-    shadowOffset: { width: 0, height: 7 },
-    shadowOpacity: 0.37,
-    shadowRadius: 8,
+
   },
   quoteText: {
     color: '#e9e9e9',
@@ -103,14 +98,12 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     alignItems: 'center',
     height: '22%',
-    backgroundColor: '#514d49',
     borderRadius: 24,
     shadowOffset: { width: 0, height: 7 },
     shadowOpacity: 0.37,
     shadowRadius: 8,
   },
   vilHomeText: {
-    color: '#e9e9e9',
     fontWeight: 'bold',
     fontSize: 25,
     margin: 20,

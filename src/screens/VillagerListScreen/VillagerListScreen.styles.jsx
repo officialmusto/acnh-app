@@ -2,13 +2,27 @@ import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
   cardList: {
-    backgroundColor: '#e7d0c0',
+    flex: 1,
+    backgroundColor: '#f7decd',
   },
   container: {
-    backgroundColor: '#e7d0c0',
+    flex: 1,
+    backgroundColor: '#f7decd',
+    
   },
   list: {
     paddingBottom: 20,
+  },
+  loadingContainer: {
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center',
+  },
+  loadingText: {
+    marginTop: 20,
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#474340'
   },
 })
 
