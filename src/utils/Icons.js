@@ -2,7 +2,7 @@ const Icons = {
   alligator: require('../assets/species-icons/alligator-icon.png'),
   anteater: require('../assets/species-icons/anteater-icon.png'),
   bear: require('../assets/species-icons/bear-icon.png'),
-  bearCub: require('../assets/species-icons/bearcub-icon.png'),
+  bear_cub: require('../assets/species-icons/bearcub-icon.png'),
   bird: require('../assets/species-icons/bird-icon.png'),
   bovine: require('../assets/species-icons/bovine-icon.png'),
   cat: require('../assets/species-icons/cat-icon.png'),

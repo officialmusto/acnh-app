@@ -9,7 +9,13 @@ import Ionicons from '@expo/vector-icons/Ionicons'
 import Icons from '../../utils/Icons'
 
 const VillagerModal = ({ villager, visible, onClose }) => {
-  const villagerSpecie = Icons[villager.species.toLowerCase()]
+  const villagerSpecie = Icons[villager.species.toLowerCase().replace(/\s+/g, '_')]
+  const formatText = (text) => {
+    return String(text) // forcibly returning string to properly space-out text.
+      .replace(/([a-z])([A-Z])/g, '$1 $2') // utilized regex to add space between camel-case
+      .replace(/,(\S)/g, ', $1') // utilized regex to add space after commas
+  }
+  
   return (
     <Modal visible={visible} animationType="slide" transparent={true} onRequestClose={onClose}>
       <SafeAreaView style={styles.modalOverlay}>
@@ -22,13 +28,15 @@ const VillagerModal = ({ villager, visible, onClose }) => {
           <Text style={[styles.modalTitle, { color: `#${villager.title_color}` }]}>{villager.name}</Text>
         </View>
 
-          <Image source={{ uri: villager.nh_details.image_url }} 
+          <Image source={{ uri: villager.nh_details?.image_url }} 
           style={styles.modalImage} 
           resizeMode="contain" />
 
           <View style={styles.quoteBox}>
             <Foundation name="quote" size={40.575} color={`#${villager.title_color}`} />
-            <Text style={[styles.quoteText, { color: `#${villager.title_color}` }]}>{villager.nh_details.quote}</Text>
+            <Text style={[styles.quoteText, { color: `#${villager.title_color}` }]}>
+              {villager.nh_details?.quote || 'No quote available'}
+            </Text>
           </View>
 
           <View style={styles.iconSection}>
@@ -43,14 +51,16 @@ const VillagerModal = ({ villager, visible, onClose }) => {
             <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>"{villager.phrase}"</Text>
           </View>
 
-          <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
+          <View style={[styles.iconTextRow, { backgroundColor: `#${villager.title_color}` }]}>
             <Foundation name="music" size={19} color={`#${villager.text_color}`} />
             <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.nh_details.house_music}</Text>
           </View>
 
           <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
             <Ionicons name="color-palette" size={19} color={`#${villager.text_color}`} />
-            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.nh_details.fav_colors}</Text>
+            <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>
+            {formatText(villager.nh_details?.fav_colors || 'No favorite colors')}
+            </Text>
           </View>
 
           <View style={styles.iconTextRow} backgroundColor={`#${villager.title_color}`}>
