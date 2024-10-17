@@ -1,28 +1,32 @@
-import { Text, View, Image } from 'react-native'
-import styles from '../Fossil/Fossil.styles'
-import React from 'react'
+import React, { useState } from 'react'
+import { Text, View, Image, TouchableOpacity } from 'react-native'
+import styles from './Fossil.styles'
 
 const Fossil = ({ fossil }) => {
+  const [expanded, setExpanded] = useState(false)
+
+  const toggleExpand = () => setExpanded(!expanded)
+
   return (
-    <View style={styles.card}>
+    <TouchableOpacity style={styles.card} onPress={toggleExpand}>
       <Text style={styles.mainFossilName}>{fossil.name}</Text>
 
-    <View style={styles.fossilPartSection}>
-      {fossil.fossils.map((part) => (
-        <View key={part.name} style={styles.fossilPart}>
-          <Text style={styles.partName}>{part.name}</Text>
-          <Image
-            source={{ uri: part.image_url }}
-            style={styles.image}
-            resizeMode="contain"
-          />
-          
+      {expanded && (
+        <View style={styles.fossilPartSection}>
+          {fossil.fossils.map((part) => (
+            <View key={part.name} style={styles.fossilPart}>
+              <Text style={styles.partName}>{part.name}</Text>
+              <Image
+                source={{ uri: part.image_url }}
+                style={styles.image}
+                resizeMode="contain"
+              />
+            </View>
+          ))}
         </View>
-      ))}
-      </View>
-    </View>
+      )}
+    </TouchableOpacity>
   )
 }
 
 export default Fossil
-

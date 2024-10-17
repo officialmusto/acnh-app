@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   modalTitle: {
-    fontSize: 28,
+    fontSize: 35,
     fontWeight: 'bold',
   },
   modalImage: {
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     padding: 20,
     fontWeight: 'bold',
-    fontSize: 25,
+    fontSize: 30,
     color: '#e9e9e9',
     marginBottom: 10,
     shadowColor: '#151615',
@@ -114,14 +114,12 @@ const styles = StyleSheet.create({
     width: 150,
     height: 140,
     shadowColor: '#151615',
-    shadowOffset: { width: 0, height: 7 },
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.37,
-    shadowRadius: 8,
+    shadowRadius: 4,
   },
   btn: {
-    padding: 15,
-    alignContent: 'center',
-    alignItems: 'center',
+
   },
   btnText: {
     color: '#e9e9e9',
