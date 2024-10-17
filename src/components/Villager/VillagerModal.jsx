@@ -6,15 +6,21 @@ import AntDesign from '@expo/vector-icons/AntDesign'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6'
 import Foundation from '@expo/vector-icons/Foundation'
 import Ionicons from '@expo/vector-icons/Ionicons'
+import Icons from '../../utils/Icons'
 
 const VillagerModal = ({ villager, visible, onClose }) => {
-
+  const villagerSpecie = Icons[villager.species.toLowerCase()]
   return (
     <Modal visible={visible} animationType="slide" transparent={true} onRequestClose={onClose}>
       <SafeAreaView style={styles.modalOverlay}>
         <View style={[styles.modalContent, { backgroundColor: `#${villager.text_color}` }]}>
-
-          <Text style={[styles.modalTitle, { color: `#${villager.title_color}` }]}>{villager.name}'s Details</Text>
+        <View style={styles.nameSection}>
+        <Image 
+        source={villagerSpecie} 
+        style={[styles.specieIcon, { tintColor: `#${villager.title_color}` }]} 
+        />
+          <Text style={[styles.modalTitle, { color: `#${villager.title_color}` }]}>{villager.name}</Text>
+        </View>
 
           <Image source={{ uri: villager.nh_details.image_url }} 
           style={styles.modalImage} 
@@ -57,16 +63,16 @@ const VillagerModal = ({ villager, visible, onClose }) => {
             <Text style={[styles.infoText, { color: `#${villager.text_color}` }]}>{villager.nh_details.hobby}</Text>
           </View>
 
-
           </View>
 
+          <View>
+            <View style={styles.vilHomeSection} backgroundColor={`#${villager.text_color}`}>
+              <Text style={[styles.vilHomeText, { color: `#${villager.title_color}` }]}>{villager.name}'s Home</Text>
+              <Image 
+              source={{ uri: villager.nh_details.house_exterior_url }} 
+              style={styles.vilHomeImage}/>
+            </View>
 
-          <View style={styles.vilHomeSection} backgroundColor={`#${villager.text_color}`}>
-            <Text style={[styles.vilHomeText, { color: `#${villager.title_color}` }]}>{villager.name}'s Home</Text>
-            <Image 
-            source={{ uri: villager.nh_details.house_exterior_url }} 
-            style={styles.vilHomeImage} 
-            resizeMode="contain" />
           </View>
 
 
