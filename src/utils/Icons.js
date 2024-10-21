@@ -28,7 +28,7 @@ const Icons = {
   penguin: require('../assets/species-icons/penguin-icon.png'),
   pig: require('../assets/species-icons/pig-icon.png'),
   rabbit: require('../assets/species-icons/rabbit-icon.png'),
-  rhino: require('../assets/species-icons/rhino-icon.png'),
+  rhinoceros: require('../assets/species-icons/rhinoceros-icon.png'),
   sheep: require('../assets/species-icons/sheep-icon.png'),
   special: require('../assets/species-icons/special-icon.png'),
   squirrel: require('../assets/species-icons/squirrel-icon.png'),

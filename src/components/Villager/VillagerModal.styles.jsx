@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
     marginRight: 10,
-    resizeMode: 'contain',
   },
   modalTitle: {
     fontSize: 35,
@@ -100,9 +99,9 @@ const styles = StyleSheet.create({
   vilHomeText: {
     flex: 1,
     justifyContent: 'flex-start',
-    padding: 20,
+    padding: 10,
     fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: 25,
     color: '#e9e9e9',
     marginBottom: 10,
     shadowColor: '#151615',
