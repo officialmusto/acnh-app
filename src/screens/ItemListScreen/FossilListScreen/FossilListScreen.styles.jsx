@@ -1,8 +1,11 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
+  content: {
+    backgroundColor: '#54767d',
+  },
   cardList: {
-    backgroundColor: '#e7d0c0',
+    backgroundColor: '#54767d',
   },
   text: {
     fontSize: 30,
