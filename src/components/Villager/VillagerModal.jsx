@@ -15,6 +15,7 @@ const VillagerModal = ({ villager, visible, onClose }) => {
       .replace(/([a-z])([A-Z])/g, '$1 $2') // utilized regex to add space between camel-case
       .replace(/,(\S)/g, ', $1') // utilized regex to add space after commas
   }
+
   
   return (
     <Modal visible={visible} animationType="slide" transparent={true} onRequestClose={onClose}>

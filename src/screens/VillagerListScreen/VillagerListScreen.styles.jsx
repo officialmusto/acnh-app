@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#f7decd',
+    backgroundColor: '#54767d',
     
   },
   list: {
