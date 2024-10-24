@@ -23,7 +23,11 @@ const styles = StyleSheet.create({
   name: {
     fontWeight: 'bold',
     fontSize: 20,
-  }
+  },
+  price: {
+    color: '#833837',
+    fontWeight: 'bold'
+  },  
 })
 
 export default styles

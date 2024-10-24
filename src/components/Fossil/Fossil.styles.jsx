@@ -43,6 +43,10 @@ const styles = StyleSheet.create({
     color: '#333',
     marginBottom: 5,
   },
+  price: {
+    color: '#833837',
+    fontWeight: 'bold'
+  },
   image: {
     width: 80,
     height: 80,

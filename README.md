@@ -1,5 +1,7 @@
 # Animal Crossing Pocket Guide
 
+**Application Pictures Coming Shortly**
+
 <h3>Techstack used:</h3>
 
 - MDN Search

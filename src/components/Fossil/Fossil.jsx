@@ -16,6 +16,7 @@ const Fossil = ({ fossil }) => {
           {fossil.fossils.map((part) => (
             <View key={part.name} style={styles.fossilPart}>
               <Text style={styles.partName}>{part.name}</Text>
+              <Text style={styles.price}>{part.sell} bells</Text>
               <Image
                 source={{ uri: part.image_url }}
                 style={styles.image}
