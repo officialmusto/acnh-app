@@ -12,6 +12,7 @@ const Fish = ({ fish }) => {
         resizeMode="contain"
         />
         <Text style={styles.name}>{fish.name}</Text>
+        <Text>{fish.sell_nook} bells</Text>
       </View>
     </SafeAreaView>
   )

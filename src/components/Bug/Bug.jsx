@@ -12,6 +12,7 @@ const Bug = ({ bug }) => {
         resizeMode="contain"
         />
         <Text style={styles.name}>{bug.name}</Text>
+        <Text>{bug.sell_nook} bells</Text>
       </View>
     </SafeAreaView>
   )
