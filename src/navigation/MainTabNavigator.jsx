@@ -14,14 +14,17 @@ import MoreListScreen from '../screens/MoreListScreen/MoreListScreen'
 const Tab = createBottomTabNavigator()
 
 const MainTabNavigator = () => {
-  const tabIconColor = "#605c57"
+  const tabIconColor = "#52747b"
   const tabIconColorH = "#0a5d65"
   return (
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: '#272523',
+          backgroundColor: '#d6cac0',
         },
+        headerStyle: {
+          backgroundColor: '#d6cac0'
+        }
       }}
     >
         <Tab.Screen

@@ -26,7 +26,7 @@ const VillagerListScreen = () => {
         <View style={styles.container}>
           {loading ? (
             <View style={styles.loadingContainer}>
-              <ActivityIndicator size="large" color="#474340" />
+              <ActivityIndicator size="large" color="#d6cac0" />
               <Text style={styles.loadingText}>Loading villagers...</Text>
             </View>
           ) : (
